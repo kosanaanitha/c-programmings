@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a value");
+    scanf("%d",&a);
+    if(a<=10)
+    {
+        printf("Selected");
+    }
+    else
+    {
+        printf("Not Selected");
+    }
+    return 0;
+}
+Output: Enter a value 
+        11  
+        Not Selected
