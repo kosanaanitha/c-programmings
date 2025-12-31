@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	FILE *fp;
+	char ch;
+	int count=1;
+	fp=fopen("sample.txt","r");
+	if(fp==NULL)
+	{
+		printf("File does not exist");
+		exit(0);
+	}
+	while((ch=fgetc(fp))!=EOF)
+	{
+		if(ch=='\n')
+		count++;
+	}
+	fclose(fp);
+	printf("%d",count);
+	return 0;
+}
+Output: File does not exist
