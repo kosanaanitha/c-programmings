@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+   {
+    int N, M;
+    printf("enter n,m values");
+    scanf("%d %d", &N, &M);
+    float onlinecost = 0.9 * N;
+    if (onlinecost<M)
+    {
+        printf("ONLINE");
+    }
+    else if (onlinecost>M)
+    {
+        printf("DINING");
+    } 
+    else
+    {
+        printf("EITHER");
+    }
+    return 0;
+}
+Output: enter n,m values 
+        500
+        700 
+        ONLINE
