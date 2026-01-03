@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() 
+{
+    int n,f,l;
+    printf("Enter any value");
+    scanf("%d", &n);
+    l=n%10;   
+    f=n;
+    while(f>=10) 
+    {
+        f=f/10;
+    }
+    int sum=f+l;
+    printf("sum=%d",sum);
+    return 0;
+}
+Output:Enter any value
+       12345
+       sum=6
