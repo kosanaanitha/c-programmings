@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    int i,s,c;
+    printf("Enter a&b values");
+    scanf("%d%d",&a,&b);
+    for(i=a+1;i<b;i++)
+    {
+        s=i*i;
+        c=i*i*i;
+        printf("%d %d %d\n",i,s,c);
+    }
+    return 0;
+}
+Output: Enter a&b values
+        6
+        11 
+        7 49 343
+        8 64 512
+        9 81 729
+        10 100 1000
